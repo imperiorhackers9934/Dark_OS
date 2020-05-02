@@ -1,4 +1,6 @@
 chmod +x *
+unzip main.zip
+rm main.zip
 apt update
 apt upgrade
 pkg install python -y
@@ -7,7 +9,7 @@ pkg install git -y
 pkg install mpv -y
 pkg install w3m -y
 apt install ruby -y
-gem install lolcat -y
+gem install lolcat
 pkg install termux-api -y
 pip install requests
 pip2 install requests
@@ -33,8 +35,6 @@ mv _config.yml $HOME
 cd  /data/data/com.termux/files/usr/etc
 rm bash.bashrc
 cd $HOME/Dark_OS
-unzip main.zip
-rm main.zip
 mv bash.bashrc /data/data/com.termux/files/usr/etc
 cd /sdcard && mkdir Music
 cd $HOME
